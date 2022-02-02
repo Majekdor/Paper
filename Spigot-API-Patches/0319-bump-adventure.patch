@@ -1,0 +1,33 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Kevin Barnes <majekdor@gmail.com>
+Date: Wed, 2 Feb 2022 16:07:50 -0500
+Subject: [PATCH] bump adventure
+
+
+diff --git a/pom.xml b/pom.xml
+index 73fbd5d5a591871a3a386fb5c455cd96a3992e7a..532f812e13fd039aa02e3a54f182eabadc7c3b58 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -22,7 +22,7 @@
+         <maven.compiler.source>1.8</maven.compiler.source>
+         <maven.compiler.target>1.8</maven.compiler.target>
+         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+-        <adventure.version>4.7.0</adventure.version> <!-- Paper - When updating this make sure to update the linked JavaDocs on the homepage as well! -->
++        <adventure.version>4.9.0</adventure.version> <!-- Paper - When updating this make sure to update the linked JavaDocs on the homepage as well! -->
+     </properties>
+ 
+     <repositories>
+@@ -64,6 +64,13 @@
+             <groupId>net.kyori</groupId>
+             <artifactId>adventure-text-serializer-plain</artifactId>
+         </dependency>
++        <!-- Needed for adventure bump from 4.7.0 to 4.9.0 -->
++        <dependency>
++            <groupId>org.checkerframework</groupId>
++            <artifactId>checker-qual</artifactId>
++            <version>3.10.0</version>
++        </dependency>
++
+         <!-- Paper end -->
+         <dependency>
+             <groupId>it.unimi.dsi</groupId>
